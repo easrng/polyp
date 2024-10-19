@@ -1,0 +1,43 @@
+{
+  "name": "polyp",
+  "version": "1.0.1",
+  "description": "Load polyfills as needed",
+  "main": "dist/index.js",
+  "scripts": {
+    "fmt": "prettier -w '**/*.{json,js,html,md}'",
+    "prepare": "pnpm run fmt && pnpm run build",
+    "build": "node build.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "easrng <https://easrng.net>",
+  "license": "MIT",
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-virtual": "^3.0.2",
+    "@types/node": "^20",
+    "acorn": "^8.13.0",
+    "astring": "^1.9.0",
+    "core-js": "3.38.1",
+    "core-js-compat": "3.38.1",
+    "rollup": "^4.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easrng/polyp.git"
+  },
+  "keywords": [
+    "core-js",
+    "polyfill",
+    "feature-detection"
+  ],
+  "bugs": {
+    "url": "https://github.com/easrng/polyp/issues"
+  },
+  "homepage": "https://github.com/easrng/polyp#readme"
+}
